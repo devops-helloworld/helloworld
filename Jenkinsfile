@@ -10,6 +10,6 @@ node {
         sh './node_modules/mocha/bin/mocha --exit'
     stage 'CleanUp'
         echo 'purge and cleanup'
-        sh 'npm purge'
+        sh 'npm prune'
         sh 'rm node_modules -rf'
 }
